@@ -3,10 +3,10 @@
     <!-- Card content -->
     <div class="relative w-full h-full bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden">
       @if (active()) {
-        <img [ngSrc]="'https://cataas.com/cat/' + cat().id" fill priority
+        <img [ngSrc]="'https://cataas.com/cat/' + cat().id + '?w=600'" fill priority
              class="w-full h-full object-cover" alt="A cute cat">
       } @else {
-        <img [ngSrc]="'https://cataas.com/cat/' + cat().id" fill
+        <img [ngSrc]="'https://cataas.com/cat/' + cat().id + '?w=600'" fill
              class="w-full h-full object-cover" alt="A cute cat">
       }
       

@@ -24,7 +24,7 @@ export class CatCardComponent {
   isAnimating = signal(false);
 
   private panStartX = 0;
-  private readonly SWIPE_THRESHOLD = 80; 
+  private readonly SWIPE_THRESHOLD = 60; 
 
   constructor() {
     effect(() => {
