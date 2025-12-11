@@ -24,7 +24,7 @@ export class CatCardComponent {
   isAnimating = signal(false);
 
   private panStartX = 0;
-  private readonly SWIPE_THRESHOLD = 60; 
+  private readonly SWIPE_THRESHOLD = 80; 
 
   constructor() {
     effect(() => {
@@ -48,7 +48,7 @@ export class CatCardComponent {
     setTimeout(() => this.swiped.emit(liked), 300);
   }
 
-  onZoomClick(event: MouseEvent) {
+  onZoomClick(event: MouseEvent | TouchEvent) {
     event.stopPropagation();
     this.zoom.emit(this.cat());
   }
